@@ -7,17 +7,18 @@
 - Hibernate先插入parent records, 然后插入child records,然后更新child records的所有外键。
 - 优先使用fetch = FetchType.Lazy
 - 最好使用辅助方法来设置辅助关系。
-  ```c
+  
+```c
   //Cart（Parent）应该包含这个方法
   public void addCartItem(CartItem item){
     cartItems.add(item); // CartItem(Child)
     item.setCart(this);
-}
-  ```
+  }
+```
 
 例子：Company和Department是父子关系，Department内部还包含父子关系，
 
- ```c
+```c
  public class Company{
     @Id
     @Column(name = "company_id")
@@ -28,8 +29,8 @@
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY, mappedBy = "company")
     private List<Department> department = new ArrayList<>(); //最好初始化为private类型，由于Hibernate使用自己的List实现，永远不应该直接通过setter来改变它。
  }
- ```
- ```c
+```
+```c
 public class Department{
     @Id
     @Column(name = "department_id")
@@ -64,8 +65,8 @@ public class Department{
         //如果不用id去判断两个对象是否相等，需要修改equals里面的规则,因为id是自动生成的，刚保存的时候id都是null，会导致保存不进去。
     }
  
- ```
- ```c
+```
+```c
  //save Department entity
  for(DepartmentDto depDto: company.getDepartment()){
     //save department
@@ -80,6 +81,6 @@ public class Department{
     //save sub end
     company.getDepartment().add(dep);
  }
- ```
+```
 
  Ref:https://stackoverflow.com/questions/53647672/how-to-save-parent-and-child-in-one-shot-jpa-hibernate
