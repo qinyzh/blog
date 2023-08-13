@@ -1,0 +1,105 @@
+{
+    "root": {
+        "data": {
+            "id": "cur81kz582w0",
+            "created": 1691910011043,
+            "text": "数据类型"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cur81vcs9io0",
+                    "created": 1691910033635,
+                    "text": "基本数据类型",
+                    "layout_mind_offset": {
+                        "x": -107,
+                        "y": -74
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cur81w9y5iw0",
+                            "created": 1691910035641,
+                            "text": "数值型"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cur82v9bz000",
+                                    "created": 1691910111791,
+                                    "text": "整数类型：byte,short,int,long"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cur82whhybk0",
+                                    "created": 1691910114461,
+                                    "text": "浮点类型：float,double"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cur82h6po4g0",
+                            "created": 1691910081157,
+                            "text": "字符型：chart"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cur82ij1v9c0",
+                            "created": 1691910084080,
+                            "text": "布尔型：boolean"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cur81yqecbk0",
+                    "created": 1691910040989,
+                    "text": "引用数据类型",
+                    "layout_mind_offset": {
+                        "x": 516,
+                        "y": 103
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cur84379etk0",
+                            "created": 1691910207444,
+                            "text": "类：class"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cur84426zo80",
+                            "created": 1691910209314,
+                            "text": "接口：interface"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cur844tgyyw0",
+                            "created": 1691910210964,
+                            "text": "数组：[]"
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
